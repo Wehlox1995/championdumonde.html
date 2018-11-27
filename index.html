@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Double tableau</title>
+		<meta charset=UTF-8>
+	<style type="text/css">
+	
+	body {
+font: 25px "Carnivalee Freakshow"; margin: auto; position: relative; width: 900px; height: auto; background-image: url("championdumonde.jpg");
+color: #00FF00;
+ }
+}
+	</style>
+ 	</head>
+	<body>
+
+	
+			Entrez le nom du pays a ajouter:
+		 <input style="text-align: center;" placeholder="Pays" id="NomPays">
+            </select><button id="valide">Valider</button>
+		<br>
+		les pays du groupes sont:
+		<input id="GroupeFinal" size="90">
+		<script type="text/javascript">
+		var GroupeA=['France','Pays-Bas','Allemagne'];
+		document.getElementById("valide").addEventListener('click',afficherGroupeFinal);
+
+		function afficherGroupeFinal()
+		{
+			var NomPays=document.getElementById("NomPays").value;
+			var groupe=GroupeA.push(NomPays)
+
+				for (i=0;i<NomPays.length;i++)
+				{
+						document.getElementById('GroupeFinal').value = GroupeA;
+						}	
+
+		}
+
+		</script>
+	</body>
+</html>
